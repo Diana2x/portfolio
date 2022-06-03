@@ -1,44 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
 *{
-    font-family: poppins, sans-serif;  
-    margin: 0px;
+    font-family: "poppins", sans-serif;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
     font-size: 62.5%;
 }
 body{
     height: 100vh;
-    width: 100vw;
-    background-image: radial-gradient(circle at 13% 62%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 72%,transparent 72%, transparent 80%,transparent 80%, transparent 100%),radial-gradient(circle at 46% 87%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 29%,transparent 29%, transparent 76%,transparent 76%, transparent 100%),radial-gradient(circle at 46% 32%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 34%,transparent 34%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 3% 53%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 11%,transparent 11%, transparent 57%,transparent 57%, transparent 100%),radial-gradient(circle at 53% 54%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 9%,transparent 9%, transparent 27%,transparent 27%, transparent 100%),linear-gradient(45deg, rgb(224, 200, 224),rgb(212, 98, 186));
+    width: 100%;
+    background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%,rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%,rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%,rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%,rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%,rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%,rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%),linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%,rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%,rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%,rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%,rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%,rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%,rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%,rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%);
 }
 .navbar{
-    overflow: hidden;
-    background-color: black;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    position: sticky;
+    position: fixed;
     align-items: center;
-    justify-content: center;
-    opacity: 85%;
-    top: 0%;
-    height: 5rem;
+    justify-content: space-between;
+    top: 0;
+    padding: 0 1rem;
+    height: 8.5vh;
+}
+.nav-icon{
+    display: flex;
+    flex: 0 1 40%;
+}
+.nav-icon img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2.4px solid hotpink;
 }
 
+.nav-icon img:hover{
+    border: 2.4px solid purple;
+    box-shadow: 1px 1px 26px 3px rgba(122,60,190,0.75);
+}
+.nav-list{
+    display: flex;
+    flex: 0 1 60%;
+    justify-content: flex-end;
+}
 .nav-list a{
     text-decoration: none;
-    color: white;
+    color: rgb(4, 1, 1);
     padding: 14px 16px;
-    font-size: 8em;
+    font-size: 3em;
 }
   
-.navbar a:hover {
+.nav-list a:hover {
     text-decoration: underline;
+    text-underline-position: under;
+    color: purple;
 }
 
 section {
-    min-height: 100vh;
-    background-color: transparent;
-    overflow: hidden;
+    width: 100%;
 }
 
 p{
     color:black;
     font-size: 1.5rem;
+}
+
+#Diana{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@keyframes fillSvg{
+    0%{
+        
+    }
+    100%{
+       
+    }
 }
