@@ -8,20 +8,34 @@
     <title>Diana Coe</title>
   </head>
   <body>
-    <div class="navbar">
-      <div class="nav-icon">
-        <a href="main"><img src="images/Diana-nav--icon.png" /></a>
-      </div>
-      <div class="nav-list">
-        <a href="#">About</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-    <svg id="Diana" >
-
-    </svg>
-    </div>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="nav collapsible">
+        <a class="diana-icon" href="#home"
+          ><img src="images/Diana-nav--icon.png"
+        /></a>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#home">Home</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#">About me</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Home section -->
+    <section name="home" id="home">
+      <svg viewBox="0 0 1350 600">
+        <text x="50%" y="50%" fill="transparent" text-anchor="middle">
+          DIANA
+        </text>
+      </svg>
+      <p>Welcome to my website.</p>
+      <p>I'm Diana, an enthusiastic Web Developer.</p>
+    </section>
+    <!-- Work Section-->
+    <section name="work" id="work">
+      <h1 class="line-decoration">Projects I have worked on</h1>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
