@@ -2,17 +2,17 @@
 
 ::selection {
   background: var(--color-primary);
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
-  --color-body-darker: #5c5577;
-  --color-border: #ccc;
+  --color-primary: rgb(241, 238, 238);
+  --color-secondary: #2d2847;
+  --color-accent: #0089e4;
+  --color-headings: #1a1a1a;
+  --color-body: #000000;
+  --color-body-darker: #2d2841;
+  --color-border: rgb(153, 143, 161);
   --border-radius: 30px;
 }
 
@@ -20,6 +20,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -37,15 +38,64 @@ body {
 /*LIST & LINKS */
 a {
   text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  text-decoration: underline;
+  color: var(--color-accent);
 }
 
 .list {
   list-style: none;
 }
 
+/*NAVBAR */
+header{
+  background-color: var(--color-primary);
+  border-bottom: 1 px solid var(--color-border);
+  position: fixed; 
+  top: 0;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3px;
+}
+.nav a img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid pink;
+}
+.nav a img:hover{
+  border: 1px solid hotpink;
+}
+.nav__list{
+  display: inline-flex;
+  font-size: 16px;
+}
+.nav__list .nav__item{
+  margin: 2rem;
+}
+.nav__item:hover{
+  color: var(--color-accent);
+  font-size: 18px;
+}
+/*MAIN CONTAINER*/
+.main{
+  margin-top: 3em;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto; /* To center the content*/
+}
 
+/*HOME SECTION*/
 svg text {
-  stroke: rgb(241, 238, 238);
+  stroke: var(--color-primary);
   font-size: 16rem;
   font-weight: 600;
   stroke-width: 2.7;
@@ -65,25 +115,3 @@ svg text {
 }
 
 
-/* 
-#work .line-decoration:before{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: 0; 
-    top: 50%; 
-}
-#work  .line-decoration:after{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    right: 0; 
-    top: 50%; 
-}
-*/

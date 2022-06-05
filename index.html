@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Diana Coe</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Diana Coe</title>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <header>
-    <nav class="nav collapsible">
-      <a class="diana-icon" href="#home"><img src="images/Diana-nav--icon.png" /></a>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#home">Home</a></li>
-        <li class="nav__item"><a href="#work">Work</a></li>
-        <li class="nav__item"><a href="#">About me</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Home section -->
-  <section name="home" id="home" class="container">
-    <svg viewBox="0 0 1350 600">
-      <text x="50%" y="50%" fill="transparent" text-anchor="middle">
-        DIANA
-      </text>
-    </svg>
-    <p>Welcome to my website.</p>
-    <p>I'm Diana, an enthusiastic Web Developer.</p>
-  </section>
-  <!-- Work Section-->
-  <section name="work" id="work">
-    <h1 class="line-decoration">Projects I have worked on</h1>
-  </section>
-  <script src="script.js"></script>
-</body>
-
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="nav collapsible">
+        <a class="diana-icon" href="#home"
+          ><img src="images/Diana-nav--icon.png"
+        /></a>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#home">Home</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#">About me</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <!-- Home section -->
+      <section name="home" id="home" class="container">
+        <svg id="name" viewBox="0 0 1350 600">
+          <text x="50%" y="50%" fill="transparent" text-anchor="middle">
+            DIANA
+          </text>
+        </svg>
+        <p>Welcome to my website.</p>
+        <p>I'm Diana, an enthusiastic Web Developer.</p>
+      </section>
+      <!-- Work Section-->
+      <section name="work" id="work" class="container">
+        <h1 class="line-decoration">Projects I have worked on</h1>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
