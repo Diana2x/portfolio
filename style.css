@@ -1,132 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
-*{
-    font-family: "poppins", sans-serif;  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-body{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%,rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%,rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%,rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%,rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%,rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%,rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%),linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%,rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%,rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%,rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%,rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%,rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%,rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%,rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%);
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%, rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%, rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%, rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%, rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%, rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%, rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%, rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%);
 }
 
 
 /*text*/
-h1,h2,h3,h4{
-    text-align: center;
-    font-size: 4rem;
-    max-width: 600;
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-size: 4rem;
+  max-width: 600;
 }
-p{
-    color: black;
-    font-size: 2rem;
-    text-align: center;
+
+p {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
 }
+
 /*List*/
 .list {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
-.list a{
-    text-decoration: none;
+
+.list a {
+  text-decoration: none;
 }
+
 /* NAVBAR */
 .nav {
-    background: rgb(241, 238, 238);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
-    width: 100%; 
-  }
-  
-  .nav__list {
-    width: 100%;
-    margin: 0;
-  }
-  .nav__item {
-    padding: 0.5rem 2rem;
-    border-bottom: 1px solid #222;
-  }
-  
-  .nav__item > a {
-    color: #000000;
-    transition: color 0.3s;
-    font-size: 1.6rem;
-  }
-  
-  .nav__item > a:hover {
-    color: rgb(76, 0, 152);
-    text-decoration: underline;
-  }
-  .nav__toggler {
-    opacity: 0.5;
-    transition: box-shadow 0.15s;
-    cursor: pointer;
-  }
-  
-  .nav.collapsible--expanded .nav__toggler {
-    opacity: 1;
-    box-shadow: 0 0 0 3px rgb(16, 9, 235);
-    border-radius: 5px;
-  }
-  .diana-icon img {
-   width: 52px;
-   height: 50px;
-   border-radius: 50%;
-   border: 2px solid rgb(0, 0, 0);
-   margin: 0 20px;
-  }
-  .diana-icon img:hover {
-    border: 2.2px solid rgb(76, 0, 152);
-   }
+  background: rgb(241, 238, 238);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+}
 
-  
-  @media screen and (min-width: 768px) {
-    .nav__toggler {
-      display: none;
-    }
-    .nav__list {
-      width: auto;
-      display: flex;
-      font-size: 1.6rem;
-      max-height: 100%;
-      opacity: 1;
-    }
-    .nav__item {
-      border: 0;
-    }
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item>a {
+  color: #000000;
+  transition: color 0.3s;
+  font-size: 1.6rem;
+}
+
+.nav__item>a:hover {
+  color: rgb(76, 0, 152);
+  text-decoration: underline;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px rgb(16, 9, 235);
+  border-radius: 5px;
+}
+
+.diana-icon img {
+  width: 52px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0 20px;
+}
+
+.diana-icon img:hover {
+  border: 2.2px solid rgb(76, 0, 152);
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
   }
-  
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
+
 /*SECTION AREA! */
 
-/* HOME PAGE */ 
-#home{
-    padding-top: 8.5vh;
-    width: 100%;
+/* HOME PAGE */
+#home {
+  padding-top: 8.5vh;
 }
 
-svg text{
-    stroke: rgb(241, 238, 238);
-    font-size: 16rem;
-    font-weight: 600;
-    stroke-width: -5;
-    animation: textAnimate 6s ;
+svg text {
+  stroke: rgb(241, 238, 238);
+  font-size: 16rem;
+  font-weight: 600;
+  stroke-width: 3;
+  animation: textAnimate 6s;
 }
 
-@keyframes textAnimate{
-    0%{
-        stroke-dasharray: 0 50%;
-        stroke-dashoffset: 20%;
-    }
-    100% {
-        stroke-dasharray: 50% 0; 
-        stroke-dashoffset: -20%;
-    }
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+  }
 }
 
 
