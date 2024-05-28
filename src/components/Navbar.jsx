@@ -64,7 +64,7 @@ function Navbar() {
       ) : (
         ''
       )}
-      <div className='md:block hidden fixed top-[25%] z-10'>
+      <div className='md:block hidden fixed top-1/2 transform -translate-y-1/2 z-10'>
         <div className='flex flex-col'>
           <a href="#main" className='rounded-full shadow-lg bg-gray-100 shadow-pink-300 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 '>
             <AiOutlineHome size={20}/>
