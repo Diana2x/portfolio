@@ -15,7 +15,7 @@ function Navbar() {
       <AiOutlineMenu onClick={handleNav} className='absolute top-4 right-4 z-[99] md:hidden' />
       {nav  ? (
         <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
-          <a
+          <a onClick={handleNav}
             href="#main"
             className='w-[75%] flex justify-center gap-3 items-center rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer shadow-pink-300 hover:scale-110 ease-in duration-100'
           >
@@ -24,7 +24,7 @@ function Navbar() {
             </span>
             <span className='flex flex-1 justify-start'>Home</span>
           </a>
-          <a
+          <a onClick={handleNav}
             href="#work"
             className='w-[75%] flex gap-4 items-center rounded-full shadow-lg bg-gray-100 m-2 py-4 cursor-pointer shadow-pink-300 hover:scale-110 ease-in duration-100'
           >
@@ -33,7 +33,7 @@ function Navbar() {
             </span>
             <span className='flex flex-1 justify-start'>Work</span>
           </a>
-          <a
+          <a onClick={handleNav}
             href="#projects"
             className='w-[75%] flex gap-4 items-center rounded-full shadow-lg bg-gray-100 m-2 py-4 cursor-pointer shadow-pink-300 hover:scale-110 ease-in duration-100'
           >
@@ -42,7 +42,7 @@ function Navbar() {
             </span>
             <span className='flex flex-1 justify-start'>Projects</span>
           </a>
-          <a
+          <a onClick={handleNav}
             href="#resume"
             className='w-[75%] flex gap-4 items-center rounded-full shadow-lg bg-gray-100 m-2 py-4 cursor-pointer shadow-pink-300 hover:scale-110 ease-in duration-100'
           >
@@ -51,7 +51,7 @@ function Navbar() {
             </span>
             <span className='flex flex-1 justify-start'>Resume</span>
           </a>
-          <a
+          <a  onClick={handleNav}
             href="#contact"
             className='w-[75%] flex gap-4 items-center rounded-full shadow-lg bg-gray-100 m-2 py-4 cursor-pointer shadow-pink-300 hover:scale-110 ease-in duration-100'
             >
