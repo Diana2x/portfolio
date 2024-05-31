@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlineWorkOutline } from "react-icons/md";
-import { BsPerson } from 'react-icons/bs';
+import { SlUserFemale } from "react-icons/sl";
+
 
 
 function Navbar() {
@@ -47,9 +48,9 @@ function Navbar() {
             className='w-[75%] flex gap-4 items-center rounded-full shadow-lg bg-gray-100 m-2 py-4 cursor-pointer shadow-pink-300 hover:scale-110 ease-in duration-100'
           >
             <span className='w-[45%] flex justify-end'>
-            <BsPerson size={20} />
+            <SlUserFemale size={20} />
             </span>
-            <span className='flex flex-1 justify-start'>Resume</span>
+            <span className='flex flex-1 justify-start'>About me</span>
           </a>
           <a  onClick={handleNav}
             href="#contact"
@@ -75,8 +76,8 @@ function Navbar() {
            <a href="#projects" className='rounded-full shadow-lg bg-gray-100 shadow-pink-300 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 '>
             <AiOutlineProject size={20}/>
            </a> 
-           <a href="#resume" className='rounded-full shadow-lg bg-gray-100 shadow-pink-300 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 '>
-            <BsPerson size={20}/>
+           <a href="#aboutme" className='rounded-full shadow-lg bg-gray-100 shadow-pink-300 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 '>
+            <SlUserFemale size={20}/>
            </a> 
            <a href="#contact" className='rounded-full shadow-lg bg-gray-100 shadow-pink-300 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 '>
             <AiOutlineMail size={20}/>

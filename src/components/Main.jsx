@@ -11,17 +11,12 @@ function Main() {
       <div className='w-full h-screen absolute top-0 left-0 bg-white/10 flex items-center justify-center'>
         <div className='flex flex-col lg:flex-row items-center'>
           <div className='max-w-[700px] flex flex-col justify-center items-center lg:items-start'>
-            <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>I'm Diana Cordero</h1>
-            <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>I'm a
+            <h1 className='flex sm:text-5xl text-4xl pt-4 font-bold text-gray-800'>I'm  
               <TypeAnimation
                 sequence={[
-                  'Developer',
+                  'Diana Cordero',
                   2000,
-                  'Designer',
-                  2000,
-                  'Tech Enthusiast',
-                  2000,
-                  'Learner',
+                  'a Web Developer',
                   2000,
                 ]}
                 wrapper="span"
@@ -29,7 +24,10 @@ function Main() {
                 style={{ fontSize: '1em', display: 'inline-block', paddingLeft: '5px' }}
                 repeat={Infinity}
               />
-            </h2>
+            </h1>
+            <div>
+              <p className='py-6'>I'm passionate about technology, with experience in customer service and logistics. I currently work as a Business Systems Analyst, where I use my skills to improve business processes. My passion for technology drives me to seek innovative solutions in the IT sector. I am excited to be a valuable asset to any team.</p>
+            </div>
             <div className='flex justify-between pt-6 max-w-[200px] w-full'>
               <FaTwitter className='cursor-pointer' size={20} />
               <FaFacebook className='cursor-pointer' size={20} />
