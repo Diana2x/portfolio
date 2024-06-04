@@ -4,11 +4,11 @@ This is my personal portfolio website built with Vite, React, and Tailwind CSS. 
 
 ## Technologies
 
-#### Vite.
-#### React.
-#### Tailwind CSS.
+#### Vite
+#### React
+#### Tailwind CSS
 
 
 ### Overview:
 
-Live Version: [Here 👉]()
+Live Version: [Here 👉](   )
